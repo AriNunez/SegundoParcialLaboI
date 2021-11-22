@@ -1,4 +1,5 @@
 #include "Controller.h"
+#define LEN_ARCHIVENAME 20
 
 
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
@@ -8,22 +9,67 @@
  * \return int Retorna (0) en caso de error - (1) en caso de exito
  *
  */
-int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
+int controller_loadLibrosFromText(LinkedList* pArrayListLibros)
 {
 	int retorno;
+	char nombreArchivo[LEN_ARCHIVENAME];
 	FILE* pArchivo;
 
 	retorno = 0;
 
-	if(path != NULL && pArrayListEmployee != NULL)
+	if(pArrayListLibros != NULL)
 	{
-		pArchivo = fopen(path,"r");
-
-		if(pArchivo != NULL)
+		if(utn_getTexto(nombreArchivo, "\nIngrese el nombre del archivo que quiere leer(RECUERDE INCLUIR LA EXTENSION .csv): \n", "\n¡ERROR!\n", LEN_ARCHIVENAME, 3)==0)
 		{
-			parser_EmployeeFromText(pArchivo, pArrayListEmployee);
-			fclose(pArchivo);
-			retorno = 1;
+
+			if(1)//strcmp(nombreArchivo,"libros.csv")==0)
+			{
+				pArchivo = fopen(nombreArchivo,"r");
+				if(pArchivo != NULL)
+				{
+					parser_LibrosFromText(pArchivo, pArrayListLibros);
+					fclose(pArchivo);
+					retorno = 1;
+				}
+			}
+			else
+			{
+				puts("\n¡ERROR! NO FUE POSIBLE ENCONTRAR EL NOMBRE DEL ARCHIVO INGRESADO\n");
+			}
+
+		}
+	}
+
+    return retorno;
+}
+
+int controller_loadEditorialesFromText(LinkedList* pArrayListEditoriales)
+{
+	int retorno;
+	char nombreArchivo[LEN_ARCHIVENAME];
+	FILE* pArchivo;
+
+	retorno = 0;
+
+	if(pArrayListEditoriales != NULL)
+	{
+		if(utn_getTexto(nombreArchivo, "\nIngrese el nombre del archivo que quiere leer(RECUERDE INCLUIR LA EXTENSION .csv): \n", "\n¡ERROR!\n", LEN_ARCHIVENAME, 3)==0)
+		{
+			if(1)
+			{
+				pArchivo = fopen(nombreArchivo,"r");
+				if(pArchivo != NULL)
+				{
+					parser_EditorialesFromText(pArchivo, pArrayListEditoriales);
+					fclose(pArchivo);
+					retorno = 1;
+				}
+			}
+			else
+			{
+				puts("\n¡ERROR! NO FUE POSIBLE ENCONTRAR EL NOMBRE DEL ARCHIVO INGRESADO\n");
+			}
+
 		}
 	}
 
@@ -36,28 +82,36 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
  * \return int Retorna (0) en caso de error - (1) en caso de exito
  *
  */
-int controller_ListEmployee(LinkedList* pArrayListEmployee)
+int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pArrayListEditoriales)
 {
 	int retorno;
 	int len;
 	int i;
-	Employee* pEmployee;
-
+	int idEditorial;
+	int indexEditorial;
+	eLibro* pLibro;
+	eEditorial* pEditorial;
 	retorno = 0;
 
-	if(pArrayListEmployee != NULL)
+	if(pArrayListLibros != NULL && pArrayListEditoriales != NULL)
 	{
-		len = ll_len(pArrayListEmployee);
+		len = ll_len(pArrayListLibros);
 
-		puts("\n\t>>Listado Empleados");
-		printf("\n|%-10s|%-25s|%-25s|%-25s|\n\n","ID","NOMBRE","HORAS TRABAJADAS","SUELDO");
+		puts("\n\t>>Listado Libros con Editoriales");
+		printf("|%-10s|%-50s|%-25s|%-10s|%-20s|\n","ID","TITULO","AUTOR","PRECIO","NOMBRE DE LA EDITORIAL");
 
 		for(i=0;i<len;i++)
 		{
-			pEmployee = (Employee*) ll_get(pArrayListEmployee, i);
-			if(employee_MostrarUno(pEmployee)==1)
+			pLibro = (eLibro*) ll_get(pArrayListLibros, i);
+			libro_getIdEditorial(pLibro, &idEditorial);
+			indexEditorial = editorial_BuscarIndexById(pArrayListEditoriales, idEditorial);
+			if(indexEditorial != -1)
 			{
-				retorno = 1;
+				pEditorial = (eEditorial*) ll_get(pArrayListEditoriales, indexEditorial);
+				if(libro_MostrarUnoConRelacion(pLibro, pEditorial)==1)
+				{
+					retorno = 1;
+				}
 			}
 		}
 
@@ -71,7 +125,7 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
  * \return int Retorna (0) en caso de error - (1) en caso de exito
  *
  */
-int controller_sortEmployee(LinkedList* pArrayListEmployee)
+/*int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	int criterio;
@@ -118,7 +172,7 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 	}
 
     return retorno;
-}
+}*/
 
 /** \brief Guarda los datos de los empleados en el archivo data.csv (modo texto).
  *
@@ -127,7 +181,7 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
  * \return int Retorna (0) en caso de error - (1) en caso de exito
  *
  */
-int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
+/*int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	FILE* pArchivo;
@@ -178,4 +232,4 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
 	}
 
     return retorno;
-}
+}*/

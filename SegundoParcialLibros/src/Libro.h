@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "utn.h"
+#include "Editorial.h"
 
 #define LEN_CHAR 128
 
@@ -26,8 +27,10 @@ typedef struct
 
 eLibro* libro_new();
 eLibro* libro_newParametros(int id,char* titulo,char* autor,float precio,int idEditorial);
+void libro_delete(eLibro* this);
 
 int libro_MostrarUno(eLibro* this);
+int libro_MostrarUnoConRelacion(eLibro* this,eEditorial* thisEditorial);
 
 int libro_setId(eLibro* this,int id);
 int libro_setTitulo(eLibro* this,char* titulo);
@@ -41,12 +44,12 @@ int libro_getAutor(eLibro* this,char* autor);
 int libro_getPrecio(eLibro* this,float* precio);
 int libro_getIdEditorial(eLibro* this,int* idEditorial);
 
-int employee_CompareById(void* pFirstEmployee,void* pSecondEmployee);
-int employee_CompareByTitulo(void* pFirstEmployee,void* pSecondEmployee);
-int employee_CompareByAutor(void* pFirstEmployee,void* pSecondEmployee);
-int employee_CompareByPrecio(void* pFirstEmployee,void* pSecondEmployee);
-int employee_CompareByIdEditorial(void* pFirstEmployee,void* pSecondEmployee);
+int libro_CompareById(void* pFirstLibro,void* pSecondLibro);
+int libro_CompareByTitulo(void* pFirstLibro,void* pSecondLibro);
+int libro_CompareByAutor(void* pFirstLibro,void* pSecondLibro);
+int libro_CompareByPrecio(void* pFirstLibro,void* pSecondLibro);
+int libro_CompareByIdEditorial(void* pFirstLibro,void* pSecondLibro);
 
-//void libro_delete(eLibro* this);
+
 
 #endif /* LIBRO_H_ */

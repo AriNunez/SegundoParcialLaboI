@@ -11,10 +11,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "LinkedList.h"
-#include "Employee.h"
+#include "Libro.h"
 #include "Controller.h"
 
-int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
-int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+int parser_LibrosFromText(FILE* pFile , LinkedList* pArrayListLibros);
+int parser_EditorialesFromText(FILE* pFile , LinkedList* pArrayListLibros);
 
 #endif /* PARSER_H_ */

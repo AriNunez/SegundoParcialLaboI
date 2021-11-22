@@ -7,75 +7,77 @@
  * \return int Retorna (0) en caso de error - (1) en caso de exito
  *
  */
-int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+int parser_LibrosFromText(FILE* pFile , LinkedList* pArrayListLibros)
 {
 	int retorno;
-	Employee* pEmpleado;
-	char id[128];
-	char nombre[128];
-	char horasTrabajadas[128];
-	char sueldo[128];
+	eLibro* pLibro;
+	char idStr[LEN_CHAR];
+	char titulo[LEN_CHAR];
+	char autor[LEN_CHAR];
+	char precioStr[LEN_CHAR];
+	char idEditorialStr[LEN_CHAR];
+	int id;
+	float precio;
+	int idEditorial;
 
 	retorno = 0;
 
-	if(pFile != NULL && pArrayListEmployee != NULL)
+	if(pFile != NULL && pArrayListLibros != NULL)
 	{
-		fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",id,nombre,horasTrabajadas,sueldo);
+		fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n",idStr,titulo,autor,precioStr,idEditorialStr);
 		while(!feof(pFile))
 		{
-			if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",id,nombre,horasTrabajadas,sueldo)==4)
+			if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n",idStr,titulo,autor,precioStr,idEditorialStr)==5)
 			{
-				pEmpleado = employee_newParametros(id, nombre, horasTrabajadas, sueldo);
+				id = atoi(idStr);
+				precio = atof(precioStr);
+				idEditorial = atoi(idEditorialStr);
+				pLibro = libro_newParametros(id, titulo, autor, precio, idEditorial);
 
-				if(pEmpleado != NULL)
+				if(pLibro != NULL)
 				{
-					if(ll_add(pArrayListEmployee, pEmpleado)==-1)
+					if(ll_add(pArrayListLibros, pLibro)==-1)
 					{
-						employee_delete(pEmpleado);
+						libro_delete(pLibro);
 					}
 				}
 
 			}
 		}
-
 		retorno = 1;
 	}
 
     return retorno;
 }
 
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
- *
- * \param pFile FILE* Puntero a un archivo
- * \param pArrayListEmployee LinkedList* Puntero a la lista
- * \return int Retorna (0) en caso de error - (1) en caso de exito
- *
- */
-int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+int parser_EditorialesFromText(FILE* pFile , LinkedList* pArrayListEditoriales)
 {
 	int retorno;
-	Employee* pEmpleado;
+	eEditorial* pEditorial;
+	char idEditorialStr[LEN_CHAR];
+	char nombre[LEN_CHAR];
+	int idEditorial;
 
 	retorno = 0;
-
-	if(pFile != NULL && pArrayListEmployee != NULL)
+	if(pFile != NULL && pArrayListEditoriales != NULL)
 	{
+		fscanf(pFile,"%[^,],%[^\n]\n",idEditorialStr,nombre);
 		while(!feof(pFile))
 		{
-			pEmpleado = employee_new();
-			if(pEmpleado != NULL)
+			if(fscanf(pFile,"%[^,],%[^\n]\n",idEditorialStr,nombre)==2)
 			{
-				fread(pEmpleado,sizeof(Employee),1,pFile);
-				if(feof(pFile))
+				idEditorial = atoi(idEditorialStr);
+				pEditorial = editorial_newParametros(idEditorial, nombre);
+
+				if(pEditorial != NULL)
 				{
-					break;
+
+					if(ll_add(pArrayListEditoriales, pEditorial)==-1)
+					{
+						editorial_delete(pEditorial);
+					}
 				}
 
-				if(ll_add(pArrayListEmployee, pEmpleado)==-1)
-				{
-					employee_delete(pEmpleado);
-					break;
-				}
 			}
 		}
 

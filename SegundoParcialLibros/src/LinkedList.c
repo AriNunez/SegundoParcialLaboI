@@ -102,6 +102,7 @@ static int addNode(LinkedList* this, int nodeIndex,void* pElement)
 
     if(this != NULL && (nodeIndex >= 0 && nodeIndex <= ll_len(this)))
     {
+
     	pNewNode = (Node*) malloc(sizeof(Node));
 
     	if(pNewNode != NULL)

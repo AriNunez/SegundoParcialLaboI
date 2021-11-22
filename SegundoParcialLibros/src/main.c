@@ -18,6 +18,11 @@ int main(void)
 	setbuf(stdout,NULL);
 
 	int opciones;
+	LinkedList* pListaLibros;
+	LinkedList* pListaEditoriales;
+
+	pListaLibros = ll_newLinkedList();
+	pListaEditoriales = ll_newLinkedList();
 
     do
     {
@@ -33,16 +38,26 @@ int main(void)
 			switch(opciones)
 			{
 				case 1:
+					if(controller_loadLibrosFromText(pListaLibros)==1)
+					{
+						puts("CARGA EXITOSA");
+					}
 					break;
 				case 2:
+					if(controller_loadEditorialesFromText(pListaEditoriales)==1)
+					{
+						puts("CARGA EXITOSA");
+					}
 					break;
 				case 3:
 					break;
 				case 4:
+					controller_ListLibrosConRelacion(pListaLibros, pListaEditoriales);
 					break;
 				case 5:
 					break;
 				case 6:
+					puts("SALIMOOOOOOS");
 					break;
 
 			}
