@@ -1,12 +1,7 @@
-/*
- * Libros.c
- *
- *  Created on: 21 nov. 2021
- *      Author: user
- */
-
 #include "Libro.h"
 
+/// \brief Crea un nuevo eLibro en memoria de manera dinamica y lo inicializa con valores iniciales
+/// \return eLibro* Retorna NULL en caso de no conseguir espacio en memoria o el puntero al espacio reservado
 eLibro* libro_new()
 {
 	eLibro* pNewLibro = NULL;
@@ -24,6 +19,14 @@ eLibro* libro_new()
 
 	return pNewLibro;
 }
+
+/// \brief Asigna valores a un eLibro que se encuentra en memoria dinamica
+/// \param id int Entero
+/// \param titulo char* Puntero a string
+/// \param autor char* Puntero a string
+/// \param precio float Flotante
+/// \param idEditorial int Entero
+/// \return eLibro* Retorna NULL en caso de error - en caso de exito retorna el puntero al espacio reservado con valores asignados
 eLibro* libro_newParametros(int id,char* titulo,char* autor,float precio,int idEditorial)
 {
 	eLibro* pNewLibro = NULL;
@@ -45,6 +48,8 @@ eLibro* libro_newParametros(int id,char* titulo,char* autor,float precio,int idE
 	return pNewLibro;
 }
 
+/// \brief Elimina un eLibro que se encuentra en memoria dinamica
+/// \param this eLibro* Puntero a libro
 void libro_delete(eLibro* this)
 {
 	if(this != NULL)
@@ -53,6 +58,9 @@ void libro_delete(eLibro* this)
 	}
 }
 
+/// \brief Mustra los valores de un eLibro
+/// \param this eLibro* Puntero a libro
+/// \return int Retorna 0 en caso de error - 1 en caso de exito
 int libro_MostrarUno(eLibro* this)
 {
 	int retorno;
@@ -80,6 +88,10 @@ int libro_MostrarUno(eLibro* this)
 	return retorno;
 }
 
+/// \brief Muestra los valores de un eLibro con la relacion correspondiente a su eEditorial
+/// \param this eLibro* Puntero a libro
+/// \param thisEditorial eEditorial* Puntero a editorial
+/// \return int Retorna 0 en caso de error - 1 en caso de exito
 int libro_MostrarUnoConRelacion(eLibro* this,eEditorial* thisEditorial)
 {
 	int retorno;
@@ -101,12 +113,16 @@ int libro_MostrarUnoConRelacion(eLibro* this,eEditorial* thisEditorial)
 		libro_getPrecio(this, &precio);
 		editorial_getNombre(thisEditorial, nombreEditorial);
 
-		printf("|%-10d|%-50s|%-25s|%-10.2f|%-20s|\n",id,titulo,autor,precio,nombreEditorial);
+		printf("|%-10d|%-50s|%-25s|$%-10.2f|%-25s|\n",id,titulo,autor,precio,nombreEditorial);
 	}
 
 	return retorno;
 }
 
+/// \brief Asigna un valor en el eLibro recibido por paramentro
+/// \param this eLibro* Puntero a libro
+/// \param id int
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_setId(eLibro* this,int id)
 {
 	int retorno;
@@ -121,6 +137,11 @@ int libro_setId(eLibro* this,int id)
 
 	return retorno;
 }
+
+/// \brief Asigna un valor en el eLibro recibido por paramentro
+/// \param this eLibro* Puntero a libro
+/// \param titulo char* Puntero a string
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_setTitulo(eLibro* this,char* titulo)
 {
 	int retorno;
@@ -135,6 +156,11 @@ int libro_setTitulo(eLibro* this,char* titulo)
 
 	return retorno;
 }
+
+/// \brief Asigna un valor en el eLibro recibido por paramentro
+/// \param this eLibro* Puntero a libro
+/// \param autor char* Puntero a string
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_setAutor(eLibro* this,char* autor)
 {
 	int retorno;
@@ -149,6 +175,11 @@ int libro_setAutor(eLibro* this,char* autor)
 
 	return retorno;
 }
+
+/// \brief Asigna un valor en el eLibro recibido por paramentro
+/// \param this eLibro* Puntero a libro
+/// \param precio float
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_setPrecio(eLibro* this,float precio)
 {
 	int retorno;
@@ -163,6 +194,11 @@ int libro_setPrecio(eLibro* this,float precio)
 
 	return retorno;
 }
+
+/// \brief Asigna un valor en el eLibro recibido por paramentro
+/// \param this eLibro* Puntero a libro
+/// \param idEditorial int
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_setIdEditorial(eLibro* this,int idEditorial)
 {
 	int retorno;
@@ -178,6 +214,10 @@ int libro_setIdEditorial(eLibro* this,int idEditorial)
 	return retorno;
 }
 
+/// \brief Toma un valor del eLibro recibido por parametro y lo devuelve
+/// \param this eLibro* Puntero a libro
+/// \param id int* Puntero a int donde se guardara el valor buscado
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_getId(eLibro* this,int* id)
 {
 	int retorno;
@@ -192,6 +232,11 @@ int libro_getId(eLibro* this,int* id)
 
 	return retorno;
 }
+
+/// \brief Toma un valor del eLibro recibido por parametro y lo devuelve
+/// \param this eLibro* Puntero a libro
+/// \param titulo char* Puntero a char donde se guardara el valor buscado
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_getTitulo(eLibro* this,char* titulo)
 {
 	int retorno;
@@ -206,6 +251,11 @@ int libro_getTitulo(eLibro* this,char* titulo)
 
 	return retorno;
 }
+
+/// \brief Toma un valor del eLibro recibido por parametro y lo devuelve
+/// \param this eLibro* Puntero a libro
+/// \param autor char* Puntero a char donde se guardara el valor buscado
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_getAutor(eLibro* this,char* autor)
 {
 	int retorno;
@@ -220,6 +270,11 @@ int libro_getAutor(eLibro* this,char* autor)
 
 	return retorno;
 }
+
+/// \brief Toma un valor del eLibro recibido por parametro y lo devuelve
+/// \param this eLibro* Puntero a libro
+/// \param precio float* Puntero a float donde se guardara el valor buscado
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_getPrecio(eLibro* this,float* precio)
 {
 	int retorno;
@@ -234,6 +289,11 @@ int libro_getPrecio(eLibro* this,float* precio)
 
 	return retorno;
 }
+
+/// \brief Toma un valor del eLibro recibido por parametro y lo devuelve
+/// \param this eLibro* Puntero a libro
+/// \param idEditorial int* Puntero a int donde se guardara el valor buscado
+/// \return int Retorna (0) en caso de error - (1) en caso de exito
 int libro_getIdEditorial(eLibro* this,int* idEditorial)
 {
 	int retorno;
@@ -249,6 +309,10 @@ int libro_getIdEditorial(eLibro* this,int* idEditorial)
 	return retorno;
 }
 
+/// \brief Compara dos elementos recibidos por parametro
+/// \param pFirstLibro void* Puntero al primer elemento a comparar
+/// \param pSecondLibro void* Puntero al segundo elemento a comparar
+/// \return int Retorna (0) en caso de que sean iguales - (1) en caso de que el primero sea mayor - (-1) en caso de que el segundo sea mayor
 int libro_CompareById(void* pFirstLibro,void* pSecondLibro)
 {
 	int retorno;
@@ -257,7 +321,7 @@ int libro_CompareById(void* pFirstLibro,void* pSecondLibro)
 	int idPrimerLibro;
 	int idSegundoLibro;
 
-	if(pFirstLibro != NULL && pSecondLibro)
+	if(pFirstLibro != NULL && pSecondLibro != NULL)
 	{
 		pPrimerLibro = (eLibro*) pFirstLibro;
 		pSegundoLibro = (eLibro*) pSecondLibro;
@@ -280,6 +344,11 @@ int libro_CompareById(void* pFirstLibro,void* pSecondLibro)
 
 	return retorno;
 }
+
+/// \brief Compara dos elementos recibidos por parametro
+/// \param pFirstLibro void* Puntero al primer elemento a comparar
+/// \param pSecondLibro void* Puntero al segundo elemento a comparar
+/// \return int Retorna (0) en caso de que sean iguales - (>=1) en caso de que el primero sea mayor - (<=-1) en caso de que el segundo sea mayor
 int libro_CompareByTitulo(void* pFirstLibro,void* pSecondLibro)
 {
 	int retorno;
@@ -300,6 +369,11 @@ int libro_CompareByTitulo(void* pFirstLibro,void* pSecondLibro)
 
 	return retorno;
 }
+
+/// \brief Compara dos elementos recibidos por parametro
+/// \param pFirstLibro void* Puntero al primer elemento a comparar
+/// \param pSecondLibro void* Puntero al segundo elemento a comparar
+/// \return int Retorna (0) en caso de que sean iguales - (>=1) en caso de que el primero sea mayor - (<=-1) en caso de que el segundo sea mayor
 int libro_CompareByAutor(void* pFirstLibro,void* pSecondLibro)
 {
 	int retorno;
@@ -320,6 +394,11 @@ int libro_CompareByAutor(void* pFirstLibro,void* pSecondLibro)
 
 	return retorno;
 }
+
+/// \brief Compara dos elementos recibidos por parametro
+/// \param pFirstLibro void* Puntero al primer elemento a comparar
+/// \param pSecondLibro void* Puntero al segundo elemento a comparar
+/// \return int Retorna (0) en caso de que sean iguales - (1) en caso de que el primero sea mayor - (-1) en caso de que el segundo sea mayor
 int libro_CompareByPrecio(void* pFirstLibro,void* pSecondLibro)
 {
 	int retorno;
@@ -328,7 +407,7 @@ int libro_CompareByPrecio(void* pFirstLibro,void* pSecondLibro)
 	float precioPrimerLibro;
 	float precioSegundoLibro;
 
-	if(pFirstLibro != NULL && pSecondLibro)
+	if(pFirstLibro != NULL && pSecondLibro != NULL)
 	{
 		pPrimerLibro = (eLibro*) pFirstLibro;
 		pSegundoLibro = (eLibro*) pSecondLibro;
@@ -351,6 +430,11 @@ int libro_CompareByPrecio(void* pFirstLibro,void* pSecondLibro)
 
 	return retorno;
 }
+
+/// \brief Compara dos elementos recibidos por parametro
+/// \param pFirstLibro void* Puntero al primer elemento a comparar
+/// \param pSecondLibro void* Puntero al segundo elemento a comparar
+/// \return int Retorna (0) en caso de que sean iguales - (1) en caso de que el primero sea mayor - (-1) en caso de que el segundo sea mayor
 int libro_CompareByIdEditorial(void* pFirstLibro,void* pSecondLibro)
 {
 	int retorno;
@@ -359,7 +443,7 @@ int libro_CompareByIdEditorial(void* pFirstLibro,void* pSecondLibro)
 	int idEditorialPrimerLibro;
 	int idEditorialSegundoLibro;
 
-	if(pFirstLibro != NULL && pSecondLibro)
+	if(pFirstLibro != NULL && pSecondLibro != NULL)
 	{
 		pPrimerLibro = (eLibro*) pFirstLibro;
 		pSegundoLibro = (eLibro*) pSecondLibro;
@@ -383,4 +467,147 @@ int libro_CompareByIdEditorial(void* pFirstLibro,void* pSecondLibro)
 	return retorno;
 }
 
+/// \brief Compara que el idEditorial del elemento sea igual a un valor determinado para poder filtrar
+/// \param pElement void* Puntero al elemento a filtrar o no
+/// \return int Retorna 0 si no se debe filtrar el elemento - 1 en caso de que se deba filtrar el elemento
+int libro_FiltrarEditPlaneta(void* pElement)
+{
+	int retorno;
+	eLibro* pLibro;
+	int idEditorial;
 
+	if(pElement != NULL)
+	{
+		retorno = 0;
+		pLibro = (eLibro*) pElement;
+		libro_getIdEditorial(pLibro, &idEditorial);
+
+		if(idEditorial == 1)
+		{
+			retorno =  1;
+		}
+	}
+
+	return retorno;
+}
+
+/// \brief Compara que el idEditorial del elemento sea igual a un valor determinado para poder filtrar
+/// \param pElement void* Puntero al elemento a filtrar o no
+/// \return int Retorna 0 si no se debe filtrar el elemento - 1 en caso de que se deba filtrar el elemento
+int libro_FiltrarEditSigloXXI(void* pElement)
+{
+	int retorno;
+	eLibro* pLibro;
+	int idEditorial;
+
+	if(pElement != NULL)
+	{
+		retorno = 0;
+		pLibro = (eLibro*) pElement;
+		libro_getIdEditorial(pLibro, &idEditorial);
+
+		if(idEditorial == 2)
+		{
+			retorno =  1;
+		}
+	}
+
+	return retorno;
+}
+
+/// \brief Compara que el idEditorial del elemento sea igual a un valor determinado para poder filtrar
+/// \param pElement void* Puntero al elemento a filtrar o no
+/// \return int Retorna 0 si no se debe filtrar el elemento - 1 en caso de que se deba filtrar el elemento
+int libro_FiltrarEditPearson(void* pElement)
+{
+	int retorno;
+	eLibro* pLibro;
+	int idEditorial;
+
+	if(pElement != NULL)
+	{
+		retorno = 0;
+		pLibro = (eLibro*) pElement;
+		libro_getIdEditorial(pLibro, &idEditorial);
+
+		if(idEditorial == 3)
+		{
+			retorno =  1;
+		}
+	}
+
+	return retorno;
+}
+
+/// \brief Compara que el idEditorial del elemento sea igual a un valor determinado para poder filtrar
+/// \param pElement void* Puntero al elemento a filtrar o no
+/// \return int Retorna 0 si no se debe filtrar el elemento - 1 en caso de que se deba filtrar el elemento
+int libro_FiltrarEditMinotauro(void* pElement)
+{
+	int retorno;
+	eLibro* pLibro;
+	int idEditorial;
+
+	if(pElement != NULL)
+	{
+		retorno = 0;
+		pLibro = (eLibro*) pElement;
+		libro_getIdEditorial(pLibro, &idEditorial);
+
+		if(idEditorial == 4)
+		{
+			retorno =  1;
+		}
+	}
+
+	return retorno;
+
+}
+
+/// \brief Compara que el idEditorial del elemento sea igual a un valor determinado para poder filtrar
+/// \param pElement void* Puntero al elemento a filtrar o no
+/// \return int Retorna 0 si no se debe filtrar el elemento - 1 en caso de que se deba filtrar el elemento
+int libro_FiltrarEditSalamandra(void* pElement)
+{
+	int retorno;
+	eLibro* pLibro;
+	int idEditorial;
+
+	if(pElement != NULL)
+	{
+		retorno = 0;
+		pLibro = (eLibro*) pElement;
+		libro_getIdEditorial(pLibro, &idEditorial);
+
+		if(idEditorial == 5)
+		{
+			retorno =  1;
+		}
+	}
+
+	return retorno;
+}
+
+/// \brief Compara que el idEditorial del elemento sea igual a un valor determinado para poder filtrar
+/// \param pElement void* Puntero al elemento a filtrar o no
+/// \return int Retorna 0 si no se debe filtrar el elemento - 1 en caso de que se deba filtrar el elemento
+int libro_FiltrarEditPenguinBooks(void* pElement)
+{
+	int retorno;
+	eLibro* pLibro;
+	int idEditorial;
+
+	if(pElement != NULL)
+	{
+		retorno = 0;
+		pLibro = (eLibro*) pElement;
+		libro_getIdEditorial(pLibro, &idEditorial);
+
+		if(idEditorial == 6)
+		{
+			retorno =  1;
+		}
+	}
+
+	return retorno;
+}

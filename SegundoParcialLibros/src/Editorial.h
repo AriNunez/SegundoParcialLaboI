@@ -1,10 +1,3 @@
-/*
- * Editorial.h
- *
- *  Created on: 21 nov. 2021
- *      Author: user
- */
-
 #ifndef EDITORIAL_H_
 #define EDITORIAL_H_
 

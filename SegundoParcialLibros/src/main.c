@@ -18,11 +18,17 @@ int main(void)
 	setbuf(stdout,NULL);
 
 	int opciones;
+	int flagCargaDeLibros;
+	int flagCargaDeEditoriales;
 	LinkedList* pListaLibros;
 	LinkedList* pListaEditoriales;
+	LinkedList* pListFilterMinotauro;
 
 	pListaLibros = ll_newLinkedList();
 	pListaEditoriales = ll_newLinkedList();
+
+	flagCargaDeLibros = 0;
+	flagCargaDeEditoriales = 0;
 
     do
     {
@@ -38,26 +44,98 @@ int main(void)
 			switch(opciones)
 			{
 				case 1:
-					if(controller_loadLibrosFromText(pListaLibros)==1)
+					if(flagCargaDeLibros == 0)
 					{
-						puts("CARGA EXITOSA");
+						if(controller_loadLibrosFromText(pListaLibros)==1)
+						{
+							puts("CARGA EXITOSA");
+							flagCargaDeLibros = 1;
+						}
+						else
+						{
+							puts("\n¡ERROR! NO FUE POSIBLE ENCONTRAR EL NOMBRE DEL ARCHIVO INGRESADO\n");
+							puts("SE RECOMIENDA INGRESAR EL SIGUIENTE NOMBRE DE ARCHIVO: libros.csv\n");
+						}
 					}
+					else
+					{
+						puts("\n¡YA SE HA CARGADO LA LISTA DE LIBROS!\n");
+					}
+
 					break;
+
 				case 2:
-					if(controller_loadEditorialesFromText(pListaEditoriales)==1)
+					if(flagCargaDeEditoriales == 0)
 					{
-						puts("CARGA EXITOSA");
+						if(controller_loadEditorialesFromText(pListaEditoriales)==1)
+						{
+							puts("CARGA EXITOSA");
+							flagCargaDeEditoriales = 1;
+						}
+						else
+						{
+							puts("\n¡ERROR! NO FUE POSIBLE ENCONTRAR EL NOMBRE DEL ARCHIVO INGRESADO\n");
+							puts("SE RECOMIENDA INGRESAR EL SIGUIENTE NOMBRE DE ARCHIVO: editoriales.csv\n");
+						}
+					}
+					else
+					{
+						puts("\n¡YA SE HA CARGADO LA LISTA DE EDITORIALES!\n");
 					}
 					break;
+
 				case 3:
+					if(flagCargaDeLibros == 1 && flagCargaDeEditoriales == 1)
+					{
+						controller_sortLibros(pListaLibros);
+					}
+					else
+					{
+						puts("\n¡ES NECESARIO CARGAR LA LISTA DE LIBROS Y EDITORIALES PARA ACCEDER A ESTA OPCION!\n");
+					}
+
 					break;
+
 				case 4:
-					controller_ListLibrosConRelacion(pListaLibros, pListaEditoriales);
+					if(flagCargaDeLibros == 1 && flagCargaDeEditoriales == 1)
+					{
+						controller_ListLibrosConRelacion(pListaLibros, pListaEditoriales);
+					}
+					else
+					{
+						puts("\n¡ES NECESARIO CARGAR LA LISTA DE LIBROS Y EDITORIALES PARA ACCEDER A ESTA OPCION!\n");
+					}
 					break;
+
 				case 5:
+					if(flagCargaDeLibros == 1 && flagCargaDeEditoriales == 1)
+					{
+						pListFilterMinotauro =  controller_FiltrarLibrosPorEditorial(pListaLibros);
+						if(pListFilterMinotauro != NULL)
+						{
+							if(controller_saveListFilterMinotauroAsText("ListaFiltradaMinotauro.csv", pListFilterMinotauro)==1)
+							{
+								puts("\n¡GUARDADO DE LISTA FILTRADA POR EDITORIAL MINOTAURO EXITOSA EN ARCHIVO ListaFiltradaMinotauro.csv!\n");
+								if(utn_getInt(&opciones, "\n¿DESEA MOSTRAR LA LISTA FILTRADA?\n1. SI\n2. NO\n", "\n¡ERROR!\n", 1, 2, 0)==0 && opciones == 1)
+								{
+									controller_ListLibrosConRelacion(pListFilterMinotauro, pListaEditoriales);
+								}
+							}
+
+						}
+						else
+						{
+							puts("\n¡ERROR! NO FUE POSIBLE FILTRAR LA LISTA POR EDITORIAL MINOTAURO");
+						}
+					}
+					else
+					{
+						puts("\n¡ES NECESARIO CARGAR LA LISTA DE LIBROS Y EDITORIALES PARA ACCEDER A ESTA OPCION!\n");
+					}
 					break;
+
 				case 6:
-					puts("SALIMOOOOOOS");
+					puts("\n¡GRACIAS POR UTILIZAR NUESTROS SERVICIOS!\n");
 					break;
 
 			}

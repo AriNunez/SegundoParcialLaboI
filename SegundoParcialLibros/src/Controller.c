@@ -2,12 +2,9 @@
 #define LEN_ARCHIVENAME 20
 
 
-/** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
- *
- * \param path char* Puntero al nombre del archivo
- * \param pArrayListEmployee LinkedList* Puntero a la lista
+/** \brief Carga los datos de los libros desde el archivo (modo texto).
+ * \param pArrayListLibros LinkedList* Puntero a la lista
  * \return int Retorna (0) en caso de error - (1) en caso de exito
- *
  */
 int controller_loadLibrosFromText(LinkedList* pArrayListLibros)
 {
@@ -22,7 +19,7 @@ int controller_loadLibrosFromText(LinkedList* pArrayListLibros)
 		if(utn_getTexto(nombreArchivo, "\nIngrese el nombre del archivo que quiere leer(RECUERDE INCLUIR LA EXTENSION .csv): \n", "\n¡ERROR!\n", LEN_ARCHIVENAME, 3)==0)
 		{
 
-			if(1)//strcmp(nombreArchivo,"libros.csv")==0)
+			if(strcmp(nombreArchivo,"libros.csv")==0)
 			{
 				pArchivo = fopen(nombreArchivo,"r");
 				if(pArchivo != NULL)
@@ -32,17 +29,16 @@ int controller_loadLibrosFromText(LinkedList* pArrayListLibros)
 					retorno = 1;
 				}
 			}
-			else
-			{
-				puts("\n¡ERROR! NO FUE POSIBLE ENCONTRAR EL NOMBRE DEL ARCHIVO INGRESADO\n");
-			}
-
 		}
 	}
 
     return retorno;
 }
 
+/** \brief Carga los datos de las editoriales desde el archivo (modo texto).
+ * \param pArrayListEditoriales LinkedList* Puntero a la lista
+ * \return int Retorna (0) en caso de error - (1) en caso de exito
+ */
 int controller_loadEditorialesFromText(LinkedList* pArrayListEditoriales)
 {
 	int retorno;
@@ -55,7 +51,7 @@ int controller_loadEditorialesFromText(LinkedList* pArrayListEditoriales)
 	{
 		if(utn_getTexto(nombreArchivo, "\nIngrese el nombre del archivo que quiere leer(RECUERDE INCLUIR LA EXTENSION .csv): \n", "\n¡ERROR!\n", LEN_ARCHIVENAME, 3)==0)
 		{
-			if(1)
+			if(strcmp(nombreArchivo,"editoriales.csv")==0)
 			{
 				pArchivo = fopen(nombreArchivo,"r");
 				if(pArchivo != NULL)
@@ -65,22 +61,16 @@ int controller_loadEditorialesFromText(LinkedList* pArrayListEditoriales)
 					retorno = 1;
 				}
 			}
-			else
-			{
-				puts("\n¡ERROR! NO FUE POSIBLE ENCONTRAR EL NOMBRE DEL ARCHIVO INGRESADO\n");
-			}
-
 		}
 	}
 
     return retorno;
 }
 
-/** \brief Listar empleados
- *
- * \param pArrayListEmployee LinkedList* Puntero a la lista
+/** \brief Listar libros con los datos de las editoriales
+ * \param pArrayListLibros LinkedList* Puntero a la lista de libros
+ * \param pArrayListEditoriales LinkedList* Puntero a la lista de editoriales
  * \return int Retorna (0) en caso de error - (1) en caso de exito
- *
  */
 int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pArrayListEditoriales)
 {
@@ -98,7 +88,7 @@ int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pA
 		len = ll_len(pArrayListLibros);
 
 		puts("\n\t>>Listado Libros con Editoriales");
-		printf("|%-10s|%-50s|%-25s|%-10s|%-20s|\n","ID","TITULO","AUTOR","PRECIO","NOMBRE DE LA EDITORIAL");
+		printf("|%-10s|%-50s|%-25s|%-11s|%-25s|\n","ID","TITULO","AUTOR","PRECIO","NOMBRE DE LA EDITORIAL");
 
 		for(i=0;i<len;i++)
 		{
@@ -119,13 +109,11 @@ int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pA
     return retorno;
 }
 
-/** \brief Ordenar empleados
- *
- * \param pArrayListEmployee LinkedList* Puntero a la lista
+/** \brief Ordenar libros
+ * \param pArrayListLibros LinkedList* Puntero a la lista
  * \return int Retorna (0) en caso de error - (1) en caso de exito
- *
  */
-/*int controller_sortEmployee(LinkedList* pArrayListEmployee)
+int controller_sortLibros(LinkedList* pArrayListLibros)
 {
 	int retorno;
 	int criterio;
@@ -133,11 +121,11 @@ int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pA
 
 	retorno = 0;
 
-	if(pArrayListEmployee != NULL)
+	if(pArrayListLibros != NULL)
 	{
 		puts("\n\t>>Listado Criterios");
-		puts("1. ID\n2. NOMBRE\n3. HORAS TRABAJADAS\n4. SUELDO\n");
-		if(utn_getInt(&criterio, "\nIngrese una opcion: \n", "\n¡ERROR!\n", 1, 4, 3)==0)
+		puts("1. ID\n2. TITULO\n3. AUTOR\n4. PRECIO\n5. ID EDITORIAL\n");
+		if(utn_getInt(&criterio, "\nIngrese una opcion: \n", "\n¡ERROR!\n", 1, 5, 3)==0)
 		{
 			puts("\n\t>>Listado Orden");
 			puts("1. ASCENDENTE\n2. DESCENDENTE\n");
@@ -151,19 +139,23 @@ int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pA
 				switch(criterio)
 				{
 					case 1:
-						ll_sort(pArrayListEmployee, employee_CompareById, orden);
+						ll_sort(pArrayListLibros, libro_CompareById, orden);
 						break;
 
 					case 2:
-						ll_sort(pArrayListEmployee, employee_CompareByName, orden);
+						ll_sort(pArrayListLibros, libro_CompareByTitulo, orden);
 						break;
 
 					case 3:
-						ll_sort(pArrayListEmployee, employee_CompareByHorasTrabajadas, orden);
+						ll_sort(pArrayListLibros, libro_CompareByAutor, orden);
 						break;
 
 					case 4:
-						ll_sort(pArrayListEmployee, employee_CompareBySueldo, orden);
+						ll_sort(pArrayListLibros, libro_CompareByPrecio, orden);
+						break;
+
+					case 5:
+						ll_sort(pArrayListLibros, libro_CompareByIdEditorial, orden);
 						break;
 				}
 				retorno = 1;
@@ -172,53 +164,100 @@ int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pA
 	}
 
     return retorno;
-}*/
+}
 
-/** \brief Guarda los datos de los empleados en el archivo data.csv (modo texto).
- *
+/// \brief Filtra los libros por la editorial que se elija
+/// \param pArrayListLibros LinkedList* Puntero a la lista
+/// \return LinkedList* Retorna NULL en caso de error - en caso de exito retorna el puntero a la lista nueva filtrada
+LinkedList* controller_FiltrarLibrosPorEditorial(LinkedList* pArrayListLibros)
+{
+	LinkedList* pFilterList = NULL;
+	int criterio;
+
+	if(pArrayListLibros != NULL)
+	{
+		puts("\n\t>>Listado de Editoriales");
+		puts("1. PLANETA\n2. SIGLO XXI EDITORES\n3. PEARSON\n4. MINOTAURO\n5. SALAMANDRA\n6. PENGUIN BOOKS\n");
+		if(utn_getInt(&criterio, "\nIngrese una opcion: \n", "\n¡ERROR!\n", 1, 6, 3)==0)
+		{
+				switch(criterio)
+				{
+					case 1:
+						pFilterList = (LinkedList*) ll_filter(pArrayListLibros, libro_FiltrarEditPlaneta);
+						break;
+
+					case 2:
+						pFilterList = (LinkedList*) ll_filter(pArrayListLibros, libro_FiltrarEditSigloXXI);
+						break;
+
+					case 3:
+						pFilterList = (LinkedList*) ll_filter(pArrayListLibros, libro_FiltrarEditPearson);
+						break;
+
+					case 4:
+						pFilterList = (LinkedList*) ll_filter(pArrayListLibros, libro_FiltrarEditMinotauro);
+						break;
+
+					case 5:
+						pFilterList = (LinkedList*) ll_filter(pArrayListLibros, libro_FiltrarEditSalamandra);
+						break;
+
+					case 6:
+						pFilterList = (LinkedList*) ll_filter(pArrayListLibros, libro_FiltrarEditPenguinBooks);
+						break;
+				}
+		}
+
+	}
+
+    return pFilterList;
+}
+
+/** \brief Guarda los libros filtrados por la editorial Minotauro en un archivo (modo texto).
  * \param path char* Puntero al nombre del archivo
- * \param pArrayListEmployee LinkedList* Puntero a la lista
+ * \param pArrayListFilterMinotauro LinkedList* Puntero a la lista
  * \return int Retorna (0) en caso de error - (1) en caso de exito
- *
  */
-/*int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
+int controller_saveListFilterMinotauroAsText(char* path , LinkedList* pArrayListFilterMinotauro)
 {
 	int retorno;
 	FILE* pArchivo;
-	Employee* pEmpleado;
+	eLibro* pLibro;
 	int len;
 	int i;
 	int id;
-	char nombre[128];
-	int horasTrabajadas;
-	int sueldo;
+	char titulo[LEN_CHAR];
+	char autor[LEN_CHAR];
+	float precio;
+	int idEditorial;
 
 	retorno = 0;
 
-	if(path != NULL && pArrayListEmployee != NULL && ll_isEmpty(pArrayListEmployee) == 0)
+	if(path != NULL && pArrayListFilterMinotauro != NULL && ll_isEmpty(pArrayListFilterMinotauro) == 0)
 	{
 		pArchivo = fopen(path,"w");
 
 		if(pArchivo != NULL)
 		{
-			len = ll_len(pArrayListEmployee);
+			len = ll_len(pArrayListFilterMinotauro);
 
-			fprintf(pArchivo,"id,nombre,horasTrabajadas,sueldo\n");
+			fprintf(pArchivo,"id,titulo,autor,precio,idEditorial\n");
 
 			for(i=0;i<len;i++)
 			{
-				pEmpleado = (Employee*) ll_get(pArrayListEmployee, i);
-				if(pEmpleado == NULL)
+				pLibro = (eLibro*) ll_get(pArrayListFilterMinotauro, i);
+				if(pLibro == NULL)
 				{
 					break;
 				}
 
-				employee_getId(pEmpleado, &id);
-				employee_getNombre(pEmpleado, nombre);
-				employee_getHorasTrabajadas(pEmpleado, &horasTrabajadas);
-				employee_getSueldo(pEmpleado, &sueldo);
+				libro_getId(pLibro, &id);
+				libro_getTitulo(pLibro, titulo);
+				libro_getAutor(pLibro, autor);
+				libro_getPrecio(pLibro, &precio);
+				libro_getIdEditorial(pLibro, &idEditorial);
 
-				fprintf(pArchivo,"%d,%s,%d,%d\n",id,nombre,horasTrabajadas,sueldo);
+				fprintf(pArchivo,"%d,%s,%s,%.2f,%d\n",id,titulo,autor,precio,idEditorial);
 			}
 
 			fclose(pArchivo);
@@ -232,4 +271,4 @@ int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pA
 	}
 
     return retorno;
-}*/
+}

@@ -1,10 +1,3 @@
-/*
- * Libros.h
- *
- *  Created on: 21 nov. 2021
- *      Author: user
- */
-
 #ifndef LIBRO_H_
 #define LIBRO_H_
 
@@ -50,6 +43,12 @@ int libro_CompareByAutor(void* pFirstLibro,void* pSecondLibro);
 int libro_CompareByPrecio(void* pFirstLibro,void* pSecondLibro);
 int libro_CompareByIdEditorial(void* pFirstLibro,void* pSecondLibro);
 
+int libro_FiltrarEditPlaneta(void* pElement);
+int libro_FiltrarEditSigloXXI(void* pElement);
+int libro_FiltrarEditPearson(void* pElement);
+int libro_FiltrarEditMinotauro(void* pElement);
+int libro_FiltrarEditSalamandra(void* pElement);
+int libro_FiltrarEditPenguinBooks(void* pElement);
 
 
 #endif /* LIBRO_H_ */

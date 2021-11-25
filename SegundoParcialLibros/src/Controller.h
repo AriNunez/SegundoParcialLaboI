@@ -10,9 +10,8 @@
 int controller_loadLibrosFromText(LinkedList* pArrayListEmployee);
 int controller_loadEditorialesFromText(LinkedList* pArrayListEditoriales);
 int controller_ListLibrosConRelacion(LinkedList* pArrayListLibros,LinkedList* pArrayListEditoriales);
-int controller_sortEmployee(LinkedList* pArrayListEmployee);
-int controller_saveAsText(char* path , LinkedList* pArrayListEmployee);
-
-
+int controller_sortLibros(LinkedList* pArrayListLibros);
+LinkedList* controller_FiltrarLibrosPorEditorial(LinkedList* pArrayListLibros);
+int controller_saveListFilterMinotauroAsText(char* path , LinkedList* pArrayListFilterMinotauro);
 
 #endif // controller_H_INCLUDED

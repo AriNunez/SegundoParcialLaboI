@@ -1,9 +1,8 @@
 #include "parser.h"
 
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
- *
+/** \brief Parsea los datos de los libros desde el archivo (modo texto).
  * \param pFile FILE* Puntero a un archivo
- * \param pArrayListEmployee LinkedList* Puntero a la lista
+ * \param pArrayListLibros LinkedList* Puntero a la lista
  * \return int Retorna (0) en caso de error - (1) en caso de exito
  *
  */
@@ -50,6 +49,11 @@ int parser_LibrosFromText(FILE* pFile , LinkedList* pArrayListLibros)
     return retorno;
 }
 
+/** \brief Parsea los datos de las editoriales desde el archivo (modo texto).
+ * \param pFile FILE* Puntero a un archivo
+ * \param pArrayListEditoriales LinkedList* Puntero a la lista
+ * \return int Retorna (0) en caso de error - (1) en caso de exito
+ */
 int parser_EditorialesFromText(FILE* pFile , LinkedList* pArrayListEditoriales)
 {
 	int retorno;
