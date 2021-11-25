@@ -1,0 +1,501 @@
+id,titulo,autor,precio,idEditorial
+1,Gamochaeta americana (Mill.) Weddell,Tom Fassbindler,247.32,1
+2,Hyparrhenia Andersson ex Fourn.,Clem Danko,313.05,1
+3,Lepidium flavum Torr. var. flavum,Nananne Vain,229.81,6
+4,Anthurium crenatum (L.) Kunth,Adina Considine,370.96,4
+5,Sagiolechia A. Massal.,Leigha Conen,493.25,2
+6,Quercus ×neotharpii A. Camus,Arlin Inglish,232.63,6
+7,Chrysanthemum arcticum L.,Annemarie Berzin,406.76,6
+8,Thelidium pyrenophorum (Ach.) Mudd,Samaria Maslin,258.32,1
+9,Otholobium Stirt.,Mallorie Emanuel,358.75,2
+10,Bassia hyssopifolia (Pall.) Kuntz,Anthiathia Skerman,345.61,4
+11,Clematis pitcheri Torr. & A.,Phebe D'Alessandro,296.54,3
+12,Radermachera Zoll. & Moritzi,Kynthia Wilton,63.08,5
+13,Larrea Cav.,Patrice Kuzma,349.97,1
+14,Phacelia bolanderi A. Gray,Maxy McDonnell,354.69,2
+15,Carnegiea gigantea (Engelm.) Britton & Rose,Bernadine Lorrain,79.45,1
+16,Phaseolus pedicellatus,Fredrick Lemanu,166.90,2
+17,Cladonia nipponica Asah.,Sinclair Caroli,365.09,5
+18,Pterocarpus macrocarpus Kurz,Jennine Lofty,334.85,6
+19,Kirschsteiniothelia D. Hawksw.,Melantha Mann,289.54,4
+20,Geranium viscosissimum Fisch,Raddy Castenda,117.23,3
+21,Eriodictyon californicum (Hook. & Arn.) Torr.,Huey Garcia,423.01,6
+22,Eriogonum vimineum Douglas ex Benth.,Valerye Northedge,120.94,4
+23,Brachythecium nelsonii Grout,Tracey Elacoate,270.28,1
+24,Potamogeton ×rectifolius Benn.,Chet Kilbourne,385.64,3
+25,Valerianella palmeri Dyal,Charles Sillick,392.91,2
+26,Deparia acrostichoides (Sw.) M. Kato,Padriac Randales,178.89,4
+27,Geranium pyrenaicum Burm. f.,Star Egleton,108.64,6
+28,Minuartia howellii (S. Watson) Mattf.,Connor Binnie,211.44,1
+29,Eritrichium nanum (Vill.),Bernita Folliss,211.14,3
+30,Fimbristylis decipiens Kral,Sula Stainfield,344.43,4
+31,Verbena ×crookshanksii Moldenke,Boot Braybrook,128.09,5
+32,Thelypodium integrifolium,Garrett Farries,496.98,4
+33,Phyllanthus angustifolius (Sw.) Sw.,Muire Koenen,69.76,5
+34,Stylodon carneus (Medik.) Moldenke,Daune Chomicki,404.57,4
+35,Aulacomnium heterostichum (Hedw.) Bruch & Schimp.,Arny Panton,147.09,4
+36,Saxifraga hieraciifolia Waldst,Hastie Duffit,88.27,4
+37,Agrostis canina L.,Joela Draye,452.84,5
+38,Platycodon A. DC.,Domingo Spurden,174.18,3
+39,Aerva Forssk.,Britta Demann,272.65,5
+40,Plagiobothrys salsus (Brandegee) I.M. Johnst.,Juieta Badsworth,452.39,2
+41,Viola conspersa × walteri [unnamed hybrid],Waly Kimmings,82.27,1
+42,Philodendron speciosum Schott,Randie Yakunikov,173.60,1
+43,Pilea inaequalis (Juss. ex Poir.) Weddell,Lin Atherton,291.70,1
+44,Abrus precatorius L.,Diann Butland,468.66,6
+45,Acacia sophorae (Labill.) R. Br.,Lita Scamel,317.12,1
+0,""Lipocarpha rehmanii (Ridley) Goetghebeur, nom. inq."",0.00,353
+47,Salvia micrantha Vahl var. micrantha,Marielle Wiersma,37.51,4
+48,Loeselia glandulosa (Cav.) G. Don,Randie Nares,453.58,6
+49,Polygonum hirsutum Walter,Elayne McGillreich,108.58,2
+50,Juncus brevicaudatus (Engelm.) Fernald,Tessa Paradin,379.06,1
+51,Asplenium unilaterale Lam.,Hamlen Goulbourne,264.12,5
+52,Lupinus maculatus Rydb.,Astrid Fenelow,278.51,2
+53,Anthoxanthum odoratum L.,Nancy Pietraszek,235.43,3
+54,Chamaesyce sparsiflora (A. Heller) Koutnik,Vinnie Mordey,167.64,5
+55,Corydalis caseana A. Gray ssp,Pete Blasiak,313.62,2
+56,Indigofera trifoliata L.,Juieta Potteril,42.02,3
+57,Ipomoea tenuiloba Torr.,Alta Harler,327.23,1
+58,Carex ×stenolepis Less.,Gilberto Carillo,247.74,1
+59,Lupinus sericeus Pursh ssp,Carol-jean Wodeland,278.89,1
+60,Krigia wrightii (A. Gray) K.L. Chambers ex Kim,Glenna Jimenez,407.15,4
+61,Clerodendrum trichotomum,Marwin Port,327.32,5
+62,Lasthenia glabrata Lindl,Jordain Cloney,148.71,3
+63,Gaura demareei P.H. Raven & Gregory,Nikolas Kemwall,435.03,3
+64,Desmatodon latifolius (Hedw.) Brid.,Vikki Downton,149.98,4
+65,Toxicodendron pubescens Mill.,Lorene Narramor,114.17,3
+66,Androsace L.,Daune Pentony,461.30,5
+67,Lagerstroemia indica L.,Dusty Chupin,240.92,4
+68,Dichodontium Schimp.,Filide Harradine,269.22,4
+69,Puccinellia hultenii Swallen,Birgit Flowitt,400.76,3
+70,Geranium versicolor L.,Herschel Sign,430.52,3
+71,Acaulon muticum (Hedw.) Müll. Hal. var. muticum,Rooney Walsh,39.24,3
+72,Camassia quamash (Pursh),Pia Yaus,367.39,1
+73,Chrysopogon fulvus (Spreng.) Chiov.,Fredrick McLise,441.17,2
+74,Juncus brachycephalus (Engelm.) Buchenau,Noemi Orgee,49.54,4
+75,Oxytropis campestris (L.),Clotilda Cobbe,307.53,3
+76,Populus grandidentata Michx.,Kikelia Sture,93.63,1
+77,Panicum obtusum Kunth,Billie Ficken,349.01,1
+78,Guettarda valenzuelana A. Rich.,Julina Aggio,450.59,3
+79,Salix gilgiana Fr.,Daniel Leah,140.95,5
+80,Acacia mearnsii De Wild.,Anthe Keeting,295.26,1
+81,Rimelia subisidiosa (Müll. Arg.) Hale & Fletcher,Ibby Glynne,377.68,6
+82,Gentiana rubricaulis Schwein.,Maure McPeice,496.35,6
+83,Coenogonium interplexum Nyl.,Pris Sinclair,116.72,6
+84,Penstemon montanus Greene,Shara Piris,236.27,4
+85,Abutilon malacum S. Watson,Brooke Bambury,300.70,1
+86,Malachra L.,Tanhya Bockh,25.25,3
+87,Diplazium riedelianum (Bong. ex Kunze) C. Presl,Bettye Easson,31.90,1
+88,Phacelia anelsonii J.F. Macbr.,Ynez Pickford,337.87,3
+89,Senna bicapsularis (L.) Roxb.,Tabatha Dearnaley,104.65,1
+90,Stachys stricta Greene,Brittaney Fliege,33.17,6
+91,Chamaecrista chamaecristoides,Darlene Bushen,231.69,3
+92,Garrya ovata Benth.,Ally Kraft,164.63,1
+93,Lesquerella carinata Rollins,Catlee Raeburn,416.46,3
+94,Cardamine macrocarpa Brandegee,Aubry Gillow,367.53,6
+95,Nothochelone nemorosa (Douglas ex Lindl.) Straw,Land MacNeachtain,232.15,6
+96,Solanum umbelliferum Eschsch.,Reese Boissieux,394.59,2
+97,Xanthoparmelia barbatica (Elix) Egan,Theodore Canon,48.46,5
+98,Grimmia hamulosa Lesq.,Sylvester Astman,344.30,6
+99,Phlox pungens Dorn,Vally Rizon,259.63,2
+100,Tradescantia ×andersoniana W. Ludwig & Rohweder,Harley Andrejs,174.42,3
+101,Proboscidea althaeifolia (Benth.) Decne.,Cortie Matitiaho,67.35,1
+102,Sphaeralcea digitata (Greene) Rydb.,Rodolphe Castiglioni,255.08,4
+103,Peperomia yabucoana Urb. & C. DC.,Nicola Blewett,42.66,4
+104,Heterodermia Trevis.,Aharon Meadmore,417.49,6
+105,Rubus inclinis L.H. Bailey,Martica Le Ball,358.69,4
+106,Machaeranthera carnosa (A. Gray) G.L. Nesom,Benson O'Hannay,357.01,2
+107,Corallorhiza maculata (Raf.) Raf. var. maculata,Arabel Adamini,264.72,6
+108,Gyroweisia reflexa (Brid.) Schimp.,Mamie Enstone,67.80,2
+109,Carex douglasii Boott,Anjela Andreia,20.09,4
+110,Elaeis guineensis Jacq.,Prescott Gue,32.01,1
+111,Biatorella hemisphaerica Anzi,Shani Ghent,453.06,3
+112,Penstemon calcareus Brandegee,Aline Beazley,154.28,4
+113,Sporobolus nealleyi Vasey,Freeman Newton,410.40,3
+114,×Festulolium Asch. & Graebn.,Bernhard Caughan,36.81,6
+115,Clarkia heterandra (Torr.) F.H. Lewis & P.H.,Bob Dibbe,268.71,1
+116,Polygonum careyi Olney,John Flewan,421.09,6
+117,Astragalus howellii A. Gray,Lucas Escreet,431.18,6
+118,Echinopepon coulteri (A. Gray) Rose,Brok Pott,106.74,2
+119,Escobaria hesteri (Y. Wright) Buxbaum,Isadore Tuer,108.18,2
+120,Adiantum pedatum L.,Avictor Rickman,180.53,6
+121,Perideridia kelloggii (A. Gray) Mathias,Felita Baptiste,420.17,3
+122,Caloplaca cirrochroa (Ach.) Th. Fr.,Cooper Eliot,123.48,3
+123,Bryoria capillaris (Ach.) Brodo & D. Hawksw.,Sonnie Dyott,205.61,6
+124,Amelanchier Medik.,Michele Gipson,136.41,2
+125,Melaleuca L.,Cheston Dalliwater,494.52,6
+126,Liatris punctata Hook. var. punctata,Yolanthe Rosina,137.77,2
+127,Alvaradoa amorphoides,Odele Clearley,49.15,6
+128,Graphis pavoniana,Vida Bourdas,211.16,4
+129,Penstemon bicolor (Brandegee) Clokey,Giordano O'Lennane,51.58,4
+130,Carex tribuloides Wahlenb,Persis January,458.27,3
+131,Evolvulus L.,Edithe Askew,296.47,6
+132,Mirabilis austrotexana B.L. Turner,Ginevra Faill,125.49,4
+133,Suaeda mexicana (Standl.) Standl.,Martynne Higgan,114.99,3
+134,Yucca baileyi Wooton & Standl.,Maryrose Gelardi,218.85,6
+135,Asplenium kaulfussii Schltdl.,Rora Bromley,324.08,6
+136,Dicranopteris rubiginosa (Mett.) Maxon,Sally Bodycote,144.57,4
+137,Tradescantia leiandra Torr.,Evyn Drohane,185.26,4
+138,Acanthus L.,Irena Platt,275.33,1
+139,Entodontopsis Broth.,Ronny Harfleet,287.05,1
+140,Caloplaca luteoalba (Turner) Th. Fr.,Giselle Colebourn,283.73,4
+141,Campylium cardotii (Thér.) Broth.,Abrahan Moneypenny,47.95,3
+142,Coreopsis auriculata L.,Jecho Dupey,112.56,1
+143,Boerhavia linearifolia A. Gray,Cloe O'Feeney,123.46,3
+144,Ranunculus hawaiensis A. Gray,Maurie McChruiter,89.94,4
+145,Lotus strigosus (Nutt.) Greene var.,Rahal Coughtrey,333.08,1
+146,Githopsis diffusa A. Gray,Joanie Luty,182.37,4
+147,Calylophus tubicula (A. Gray) P.H. Raven,Gaspar Agge,350.79,5
+148,Cuscuta europaea L.,Ginelle Chew,130.53,1
+149,Leucodon brachypus Brid.,Burtie Illiston,332.29,6
+150,Hedychium gardnerianum Shepard ex Ker Gawl.,Berna Beavington,173.18,2
+151,Helianthus agrestis Pollard,Morlee Bourton,40.73,1
+152,Hedyotis centranthoides (Hook. & Arn.) Steud.,Kaleb McMurtyr,368.66,1
+153,Carex sartwellii Dewey,Tim Romei,59.61,4
+154,Acacia constricta Benth. var.,Cilka Eustanch,233.82,5
+155,Alopecurus geniculatus L.,Hadria Madgin,62.10,4
+156,Corydalis aurea Willd.,Lidia Huygens,431.05,4
+157,Gilia millefoliata Fisch. & C.A. Mey.,Ellswerth Fairley,95.78,4
+158,Cryptantha rugulosa (Payson) Payson,Odille Gullifant,217.67,6
+159,Baeckea L.,Wayne Nel,163.52,2
+160,Parmelina Hale,Morissa Gauntley,299.60,6
+161,Eriogonum mensicola S. Stokes,Xenos Corradetti,405.97,5
+162,Packera millelobata (Rydb.) W.A. Weber,Alvan Steanyng,342.79,3
+163,Mimulus johnstonii A.L. Grant,Jennee Bonas,258.71,2
+164,Butia Becc.,Maximilianus Crickett,359.12,6
+165,Quercus ×jolonensis Sarg.,Eadith Malimoe,95.08,2
+166,Scrophularia laevis Wooton & Standl.,Bertie Thackham,37.15,5
+167,Erigeron aequifolius H.M. Hall,Mariel Files,46.77,3
+168,Rubus multispinus Blanch.,Shanta Foreman,267.19,5
+169,Echinochloa P. Beauv.,Lester Jeyes,243.39,4
+170,Physalis heterophylla Nees,Gannie Sherme,495.96,6
+171,Eltroplectris Raf.,Courtenay Collen,303.60,5
+172,Elymus alaskanus (Scribn. & Merr.),Agatha Wason,161.14,5
+173,Lecidea furvonigrans (Tuck.) Zahlbr.,Eirena Yearsley,198.24,3
+174,Eryngium divaricatum Hook. & Arn.,Amandie Armes,348.92,3
+175,Perideridia pringlei (J.M. Coult. & Rose),Doro Knappett,196.66,1
+176,Carex ×massonii Cay. & Lepage,Spike Skivington,119.93,5
+177,Eschscholzia minutiflora S.,Dorise Lauthian,346.62,3
+178,Physalis mollis Nutt. var.,Dale Pedley,350.54,1
+179,Cardamine californica (Nutt.),Stephine Cornbell,234.40,1
+180,Thurovia triflora Rose,Celestine Von Oertzen,249.55,1
+181,Gutierrezia texana (DC.) Torr. & A. Gray,Thadeus Torrecilla,319.46,1
+182,Delphinium nuttallianum Pritz. ex Walp.,Hussein Poate,402.86,3
+183,Panicum hirticaule J. Presl var.,Cammy Linsley,122.92,4
+184,Ipomoea obscura (L.) Ker Gawl.,Jordana Poor,55.26,4
+185,Azolla pinnata R. Br. ssp. pinnata,Clio Dionisii,59.59,4
+186,Stenaria nigricans (Lam.) Terrell,Kennie Pashenkov,70.25,6
+187,Ulva clathratioides L.G. Kraft,Justen Papen,298.52,4
+188,Mentzelia veatchiana Kellogg,Elenore Monkhouse,478.05,4
+189,Cordylanthus maritimus Nutt.,Malinde Hakonsen,81.28,6
+190,Monarda citriodora Cerv.,Britt Pudden,413.12,5
+191,Mandevilla hypoleuca (Benth.) Pichon,Bobbette Pinson,63.41,5
+192,Viola sagittata Aiton var.,Alvina Antowski,123.56,1
+193,Chorizanthe uniaristata Torr. & A. Gray,Stavros Dybald,305.07,1
+194,Buellia amphidexia Imshaug ex R.C. Harris,Melly McGuff,30.51,6
+195,Lessingia leptoclada A. Gray,Libbi Castagneto,352.19,3
+196,Leptogium lichenoides (L.) Zahlbr.,Bartholomew Brinkler,386.02,5
+197,Eugenia laevis Berg,Prisca Roston,420.38,4
+198,Harrisia Britton,Mirabelle Swiggs,191.99,3
+199,Viburnum rhytidophyllum Hemsl.,Niki Gilchrest,183.88,5
+200,Melanelia exasperatula (Nyl.) Essl.,Denis Shuttle,279.07,4
+201,Anthriscus Pers.,Helaina Clayton,213.68,2
+202,Dorycnium pentaphyllum Scop.,Langston Tayloe,52.49,1
+203,Galactia erecta (Walter) Vail,Lise Collimore,366.99,4
+204,Collinsia bartsiifolia Benth,Damaris Kempton,268.62,5
+205,Panicum decompositum R. Br.,Raimondo Macieiczyk,57.58,3
+206,Polygala macradenia A. Gray,Dot Daffey,453.91,2
+207,Stephanomeria minor (Hook.) Nutt. var. minor,Karie Arkell,371.87,6
+208,Valerianella radiata (L.) Dufr.,Karalee Priditt,317.93,2
+209,Gunnera tinctoria (Molina) Mirb.,Marcellina Innott,89.72,2
+210,Dioscorea rotundata Poir.,Rich Cristofalo,464.82,4
+211,Radiola Hill,Fenelia Standage,67.84,3
+212,Styrax americanus Lam.,Aridatha Whitten,294.54,5
+213,Eriogonum microthecum Nutt.,Garrett Challens,106.60,4
+214,Elodea canadensis Michx.,Morie Denekamp,203.04,1
+215,Symphyotrichum ×batesii (Rydb.) G.L. Nesom,Shea Paolazzi,343.99,3
+216,Cylindropuntia munzii (C.B. Wolf) Backeb.,Huberto Haugg,171.03,6
+217,Eremocitrus Swingle,Jewel Martinon,225.23,3
+218,Crataegus arrogans Beadle,Audry Hamelyn,138.43,6
+219,Juglans microcarpa Berl. var. microcarpa,Nalani Town,361.25,5
+220,Parnassia palustris L. var. palustris,Henrietta Batram,290.57,1
+221,Arctostaphylos rudis Jeps. & Wies. ex Jeps.,Dulsea De'Ath,49.37,4
+222,Plagiobothrys parishii I.M. Johnst.,Tessi Catt,486.68,6
+223,Mycocalicium calicioides (Nadv.) Tibell,Bendicty Dimitrov,407.98,5
+224,Saxifraga hirculus L. ssp.,Coleen Loveard,275.73,6
+225,Phyllostachys meyeri McClure,Laurie Antoniat,329.35,2
+226,Polygonum polystachyum Wall. ex Meisn.,Arlena Binton,342.56,6
+227,Baptisia calycosa Canby var. villosa Canby,Meagan Nibley,329.19,2
+228,Aletes humilis J.M. Coult. & Rose,Evie Bozier,357.84,2
+229,Trichilia pallida Sw.,Marcello Copley,309.66,5
+230,Hieracium fendleri Sch. Bip. var. fendleri,Jemimah Treacy,295.18,1
+231,Papaver somniferum L.,Kerby Dunster,456.47,3
+232,Tetracoccus hallii Brandegee,Mart Deyes,328.90,2
+233,Pimenta racemosa (Mill.) J.W. Moore,Tonya Shorter,250.19,2
+234,Calystegia sepium (L.),Bert Causton,386.93,6
+235,Fritillaria glauca Greene,Onofredo Dunkerly,380.05,2
+236,Pyramidula tetragona (Brid.) Brid.,Wayne Satyford,337.68,2
+237,Eurybia glauca (Nutt.) G.L. Nesom,Cy Woloschin,447.32,2
+238,Chamaesyce celastroides (Boiss.),Marion Masson,278.30,1
+239,Galium muricatum W. Wight,Giselle Bothams,243.55,1
+240,Lessingia glandulifera A. Gray,Maxy Bachellier,366.85,6
+241,Erigeron geiseri Shinners,Yolanthe Leeming,471.41,5
+242,Dryopteris ×triploidea Wherry,Marshall Isakovic,490.02,4
+243,Lupinus hillii Greene var. osterhoutianus,Alasdair Bene,363.09,6
+244,Bulbostylis schaffneri (Boeckeler) C.B. Clarke,Theobald FitzGeorge,315.64,4
+245,Eugenia reinwardtiana (Blume) DC.,Kari Pracy,369.51,3
+246,Phacelia hastata Douglas ex Lehm,Jorey Yockney,168.63,5
+247,Saxifraga nelsoniana D. Don,Mandi Enns,64.68,4
+248,Alysicarpus Neck. ex Desv.,Evangeline Tithecott,364.17,1
+249,Spermacoce alata Aubl. [excluded],Farr Curcher,289.95,6
+250,Verbena pinetorum Moldenke,Darci Plank,379.03,2
+251,Melaleuca eleutherostachya F. Muell.,Junia Ryman,33.94,1
+252,Vitex parviflora Juss.,Booth Robottom,266.41,2
+253,Crassula solieri (Gay) F. Meigen,Pavia Seiller,290.15,5
+254,Psiguria ottoniana (Schltdl.) C. Jeffrey,Catha Bellchamber,465.78,6
+255,Usnea monstruosa Vain.,Ansell Renforth,129.21,5
+256,Syntrichopappus lemmonii (A. Gray) A. Gray,Carolin Dafydd,244.65,6
+257,Dalea phleoides (Torr. & A. Gray),Hali Kerr,468.58,4
+258,Salvia L.,Cheryl McDermot,203.84,4
+259,Quercus agrifolia Née,Galven Sterry,78.43,2
+260,Sambucus nigra L. ssp. canadensis,Elly Hanley,65.81,6
+261,Cymopterus acaulis (Pursh) Raf.,Cherin Patis,118.65,4
+262,Suckleya A. Gray,Josey Crutchfield,424.01,3
+263,Eragrostis gangetica (Roxb.) Steud.,Rosalyn Mackley,383.62,2
+264,Cyclodictyon varians (Sull.) Kuntze,Gertrude Siggers,426.68,6
+265,Renealmia L. f.,Sonnie Elvish,434.04,5
+266,Casuarina Rumph. ex L.,Lissa Reboul,355.91,4
+267,Fritillaria brandegeei Eastw.,Cinda Showalter,331.85,3
+268,Epilobium montanum L.,Rianon Bark,487.37,6
+269,Carex projecta Mack.,Gizela Hamblen,467.47,3
+270,Amaranthus spinosus L.,Perl Giraudou,298.04,5
+271,Borzicactus Riccob.,Lillian Domokos,339.60,4
+272,Barleria prionitis L.,Cindelyn Yvon,169.71,6
+273,Cynoglossum grande Douglas ex Lehm.,Gordy Dumsday,498.99,6
+274,Dianthus repens Willd.,Yard Bygreaves,150.18,4
+275,Gilia leptantha Parish,Glenn McNirlan,360.17,6
+276,Draba asprella Greene var. asprella,Jasmin Britzius,418.73,2
+277,Cirsium scopulorum (Greene),Sashenka Armes,383.09,5
+278,Galium aristatum L.,Rodrick Rankine,130.81,3
+279,Tephrosia sessiliflora (Poir.) Hassler,Suzanna Edlyne,490.11,2
+280,Caloplaca quercicola H. Magn.,Ernst Keymar,287.73,4
+281,Viola affinis Leconte,Gregorio Sendall,493.74,6
+282,Erigeron vetensis Rydb.,Carmencita Hannaway,132.77,2
+283,Mandragora L.,Alma Grigoliis,120.63,5
+284,Rigiopappus leptocladus A. Gray,Maximilianus O'Hear,221.07,1
+285,Alternanthera brasiliana (L.) Kuntze,Bartholemy Mannock,490.82,6
+286,Brassica narinosa L.H. Bailey,Nicolas Collecott,357.14,4
+287,Wolffia arrhiza (L.) Horkel ex Wimm.,Thorndike Yonge,394.00,4
+288,Penstemon rubicundus D.D. Keck,Ardene Blind,80.64,4
+289,Cyrtandra sandwicensis (Levl.),Ulrich Egan,45.28,6
+290,Scaphyglottis Poepp. & Endl.,Robb Dodle,285.58,1
+291,Psychotria hathewayi Fosberg,Allie Wrankmore,159.43,3
+292,Saxifraga odontoloma Piper,Efren Peschet,408.69,5
+293,Gnetum buchholzianum Engl.,Tomlin Gerok,259.84,3
+294,Potentilla flabellifolia Hook,Charlie Brimblecombe,442.32,5
+295,Calycera balsamitifolia A. Rich.,Pietra Ferrini,177.74,4
+296,Hypnum pratense (Rabenh.) Koch ex Spruce,Alfie Druhan,489.69,6
+297,Vaccinium boreale I.V. Hall & Aalders,Cassandry Ollier,70.52,2
+298,Arnica unalaschcensis Less.,Joachim Barizeret,177.35,4
+299,Melica geyeri Munro ex Bol. var. geyeri,Bea Klampk,411.49,3
+300,Cladina arbuscula (Wallr.) Hale & W.L. Culb.,Adela Treuge,277.35,1
+301,Arabis hastatula Greene,Sauveur Jeckells,212.14,2
+302,Pseudelephantopus Rohr,Charla Basnett,444.96,5
+303,Phoradendron juniperinum Engelm. ex A. Gray,Nellie Nise,225.62,4
+304,Chrysobalanus icaco L.,Frasco Dykas,126.89,2
+305,Anthracothecium canellae-albae (Fée) Müll. Arg.,Jillane Coniff,164.58,5
+306,Lilaeopsis carolinensis J.M. Coult. & Rose,Rriocard Harmar,299.82,1
+307,Plagiobothrys distantiflorus,Benita De Cruze,151.65,3
+308,Selaginella arizonica Maxon,Dniren Blewitt,42.34,3
+309,Mycomicrothelia Keissler,Cathryn Gockelen,333.08,6
+310,Casearia guianensis (Aubl.) Urb.,Morganica Grollmann,177.50,2
+311,Julella lactea (A. Massal.) M.E. Barr,Leslie Huggen,400.17,4
+312,Phytolacca americana L.,Hadria Sincock,328.20,1
+313,Tricyrtis Wall.,Adair Brittlebank,360.84,3
+314,Peltula obscurans (Nyl.) Gyel. var. obscurans,Karlee Achurch,271.34,2
+315,Jatropha cardiophylla (Torr.) Müll. Arg.,Aurelea Limmer,494.27,5
+316,Salix brachycarpa Nutt. var. brachycarpa,Cherianne Harberer,305.99,6
+317,Astragalus magdalenae Greene var.,Gareth Bowsher,160.49,6
+318,Vitex agnus-castus L. var. caerulea Rehder,Lari Semorad,29.76,2
+319,Astragalus kerrii Knight & Cully,Kally Lanon,126.23,5
+320,Beta trigyna Waldst. & Kit.,Berk Mahon,53.49,3
+321,Rorippa barbareifolia (DC.) Kitagawa,Demetris Swannick,156.19,5
+322,Palafoxia hookeriana Torr.,Karita Halley,233.49,5
+323,Larix decidua Mill.,Nicko Spinley,48.86,4
+324,Plantago bigelovii A. Gray ssp. bigelovii,Agnola Berthot,434.77,4
+325,Muilla coronata Greene,Sydney Walisiak,176.51,3
+326,Phymatosorus Pic. Serm.,Goober Coslitt,127.96,3
+327,Punctelia stictica (Duby) Krog,Dorisa Arnoud,23.35,5
+328,Eriastrum sapphirinum (Eastw.),Joeann Woollin,284.53,3
+329,Psathyrotopsis Rydb.,Ema Nester,314.42,5
+330,Tephromela aglaea (Sommerf.) Hertel & Rambold,Alta McFee,32.31,5
+331,Bryum cyclophyllum (Schwägr.) Bruch & Schimp.,Avivah Gasnell,172.00,4
+332,Nama havardii A. Gray,Brendan Minette,176.35,2
+333,Justicia carthagenensis Jacq.,Vitia Kimblen,94.36,4
+334,Erythronium hendersonii S. Watson,Jacklin Treadaway,132.45,3
+335,Calystegia malacophylla (Greene) Munz,Gallard Gippes,23.33,6
+336,Hypericum crux-andreae (L.) Crantz,Horton Hechlin,91.67,2
+337,Cladonia cornuta (L.),Melodee Kimbury,486.76,4
+338,Eriogonum divaricatum Hook.,Belva Jarred,119.94,4
+339,Parochetus communis Buch.-Ham. ex D. Don,Seward Streeton,315.96,6
+340,Ionopsidium acaule (Desf.) Rchb.,Freida Tolley,401.42,4
+341,Acacia cornigera (L.) Willd.,Berton Fritche,255.21,2
+342,Lepidium lasiocarpum Nutt.,Nickola Cropper,263.17,2
+343,Lapsana communis L.,Francis Rae,404.29,3
+344,Arceuthobium tsugense (Rosend.),Lucita Dorre,368.95,6
+345,Symphyotrichum praealtum,Ange Lawlee,333.58,6
+346,Carex radiata (Wahlenb.) Small,Lenee Harbottle,225.63,3
+347,Gmelina asiatica L.,Bobby Dougliss,122.07,5
+348,Lasthenia glabrata Lindl. ssp. glabrata,Carroll Ciepluch,167.91,2
+349,Paraleptodontium recurvifolium (Taylor) Long,Ilsa Lummis,398.74,2
+350,Hamamelis ovalis S.W. Leonard,Tally Gane,132.83,6
+351,Sapindus saponaria L. var. saponaria,Garvy Wimsett,29.75,6
+352,Arthonia epipastoides Nyl.,Charmain Lemar,260.13,1
+353,Geum canadense Jacq. var.,Rudolf Fuzzey,297.28,5
+0,""Festuca auriculata Drobow, nom. inq."",0.00,30
+355,Diellia ×lauii W.H. Wagner,Melita Besnardeau,253.80,4
+356,Mimosa turneri Barneby,Latashia McLurg,68.10,3
+357,Buellia mamillana (Tuck.) W.A. Weber,Ev Baseley,342.24,5
+358,Senecio amplectens A. Gray,Hersch Brandassi,299.51,1
+359,Glebionis carinatum (Schousb.) Tzvelev,Laughton Fairlam,43.82,1
+360,Conopholis alpina Liebm.,Reade Skelington,249.44,2
+361,Gentiana prostrata Haenke,Morton Budget,149.60,1
+362,Carlowrightia linearifolia (Torr.) A. Gray,Hieronymus Kurtis,64.90,5
+363,Parthenocissus quinquefolia (L.) Planch.,Gianna Botten,283.24,1
+364,Plagiomnium venustum (Mitt.) T. Kop.,Normand Kirkebye,123.26,1
+365,Acacia elata A. Cunn. ex Benth.,Anjanette Vane,372.10,4
+366,Cheiridopsis N.E. Br.,Geoffrey Belsham,52.05,4
+367,Crepis bakeri Greene ssp.,Erminie Strowthers,409.69,3
+368,Hymenothrix loomisii S.F. Blake,Barrie Shepherd,81.84,1
+369,Touchardia Gaudich.,Clovis Rupert,85.68,3
+370,Mentzelia collomiae C.M. Christy,Didi Brugman,284.32,1
+371,Pinckneya Michx.,Reade Carrabot,320.29,2
+372,Malus tschonoskii (Maxim.) C.K. Schneid.,Maressa Chasle,240.27,2
+373,Euphorbia segetalis L.,Anna-diana Lyford,249.02,4
+374,Schlotheimia rugifolia (Hook.) Schwägr.,Edmund Cordeau],341.82,2
+375,Pritchardia affinis Becc.,Shane Cadagan,53.04,4
+376,Hierochloe R. Br.,Grazia Clyde,309.78,1
+377,Nolina parryi S. Watson,Almira Le Fleming,314.09,5
+378,Cercocarpus intricatus S. Watson,Dallis Muckleston,329.50,5
+379,Setaria sphacelata (Schumach.),Estell Olenikov,387.14,5
+380,Cyrtandra ×kaalae H.),Wainwright Dolbey,380.92,6
+381,Viola palustris L. var. palustris,Vere Witherop,475.40,3
+382,Fritillaria imperialis L. [excluded],Klarrisa Hilley,149.49,6
+383,Moneses Salisb. ex Gray,Dominica Mollison,132.29,2
+384,Alectoria sarmentosa (Ach.),Justus Snyder,143.42,2
+385,Acacia genistifolia Link,Goraud Wones,31.27,6
+386,Boehmeria Jacq.,Alyssa Gavini,311.08,4
+387,Pediocactus simpsonii (Engelm.),Brigitta Birdwhistle,494.79,5
+388,Brodiaea coronaria (Salisb.),Drucill Biermatowicz,93.67,3
+389,Sasa veitchii (Carrière) Rehder,Ivonne Pinshon,288.48,2
+390,Lythrum lineare L.,Shelba Bicker,346.12,5
+391,Alnus cordata (Loisel.) Duby,Stacee Dominick,117.26,1
+392,Salix herbacea L.,Reinhold Simion,213.62,3
+393,Bomarea Mirb.,Helaina Ubsdell,148.98,4
+394,Corydalis caseana A. Gray,Koenraad Glasspool,404.95,5
+395,Bromus mango Desv.,Brina Allston,306.61,5
+396,Avena strigosa Schreb.,Maia Hunnisett,405.63,3
+397,Trisetum sibiricum Rupr..,Millie Spackman,102.90,4
+398,Mnium marginatum (With.) Brid. ex P. Beauv.,Garland Mant,354.79,4
+399,Cyperus neokunthianus Kük.,Nobie Toppes,48.88,5
+400,Saxifraga rivularis L.,Barton Domek,273.59,1
+401,Erigeron speciosus (Lindl.) DC. var. speciosus,Stanwood McQuie,88.87,1
+402,Arenaria congesta Nutt.,Delbert Woolner,348.47,1
+403,Amygdalaria Norman,Odelinda Ellerby,223.13,5
+404,Cakile edentula (Bigelow) Hook. ssp. edentula,Sergei Baden,91.96,6
+405,Caloplaca oregona H. Magn.,Carlos Pochon,438.86,6
+406,Saxifraga bronchialis L.,Konstantin Athowe,67.67,2
+407,Begonia hirtella Link,Tybie Jennery,328.74,1
+408,Delphinium barbeyi (Huth) Huth,Bridie Brownsill,105.64,4
+409,Cecidonia Treibel & Rambold,Roldan Waywell,450.38,4
+410,Thalictrum sparsiflorum Turcz.,Montague Pedrozzi,296.04,2
+411,Prunus susquehanae hort. ex Willd.,Karin Cable,59.83,1
+412,Holarrhena floribunda (G. Don) Durand & Schinz,Cornie Baistow,328.32,3
+413,Atriplex falcata (M.E. Jones) Standl.,Foster Ansley,258.11,4
+414,Dubautia waialealae Rock,Henry Giacopetti,453.13,3
+415,Dypsis Noronha ex Mart.,Rosabella Carlisso,470.59,5
+416,Caloplaca scopularis (Nyl.) Lettau,Sibylla Brumfitt,386.58,1
+417,Rubus illecebrosus Focke,Sallyann Cammis,87.12,5
+418,Oncostema verna (Huds.) Speta,Christie Patient,127.46,3
+419,Rosa ×rehderiana Blackb.,Martainn Duck,390.08,5
+420,Cylindropuntia wolfii (L.D. Benson) J. Rebman,Archibald Ashton,328.05,6
+421,Eriogonum nudum Douglas ex Benth,Ashton Blant,313.59,3
+422,Antrophyum Kaulf.,Cassi Nutbeem,50.86,5
+423,Saxifraga nelsoniana D. Don ssp. nelsoniana,Elianora Hubeaux,337.66,5
+424,Astragalus mulfordiae M.E. Jones,Randolf Feenan,185.35,1
+425,Eriocaulon decangulare L. var. latifolium Chapm.,Minerva Lingley,347.09,1
+426,Lupinus havardii S. Watson,Janine Trow,294.98,3
+427,Tinantia Scheidw.,Benedikt Lisett,334.71,6
+428,Callirhoe involucrata (Torr. & A. Gray),Grazia Paskins,388.37,5
+429,Galium hypotrichium A. Gray ssp. hypotrichium,Gabriela McCrorie,452.22,5
+430,Hedychium flavescens Carey ex Roscoe,Bjorn Conibear,327.98,6
+431,Platanthera flava (L.) Lindl.,Aundrea Fassmann,452.15,3
+432,Marsilea oligospora Goodding,Ulrike Reims,394.64,1
+433,Leptosiphon harknessii (Curran),Wendall Grinikhinov,378.71,2
+434,Nyssa biflora Walter,Maia Whilder,132.84,3
+435,Lomatium macrocarpum,Edy Di Domenico,401.41,4
+436,Juncus leiospermus F.J. Herm. var. ahartii Ertter,Ranique Gerring,301.32,6
+437,Aronia arbutifolia (L.) Pers.,Emiline Goodbairn,463.48,4
+438,Coccotrema pocillarium (Cummings) Brodo,Dav Marriner,434.61,5
+439,×Elyhordeum dakotense (Bowden) Bowden,Aylmer Purcell,201.31,1
+440,Frasera gypsicola (Barneby) D.M. Post,Jehanna Gouck,69.73,2
+441,Glinus radiatus (Ruiz & Pav.) Rohrb.,Bunny Jills,50.61,4
+442,Arctomia interfixa (Nyl.) Vain.,Lorilee Pere,48.63,3
+443,Comparettia Poepp. & Endl.,Guido Sayse,461.97,5
+444,Acanthus ebracteatus Vahl,Lezlie Dorricott,140.15,4
+445,Rubus hanesii L.H. Bailey,Parker Ryles,55.13,2
+446,Crassula L.,Edna Grunguer,168.54,5
+447,Triticum turgidum L.,Bern Ducket,358.83,6
+448,Lecanora cinereofusca H.,Harlie McRannell,446.98,4
+449,Beta vulgaris L. ssp. cicla (L.) W.D.J. Koch,Luise Pashen,211.26,5
+450,Cabomba caroliniana A. Gray,Nikolia Jorn,56.80,5
+451,Archidium alternifolium (Hedw.) Schimp.,Margalit Luis,132.50,1
+452,Equisetum scirpoides Michx.,Amble Parkyn,47.41,1
+453,Gentiana linearis Froel.,Broddy Cartmel,152.37,6
+454,Styrax japonicus Siebold & Zucc.,Alexandre Stoll,40.88,2
+455,Chelone obliqua L. var. obliqua,Joanne Elvey,406.97,5
+456,Euonymus occidentalis Nutt. ex Torr.,Tracey Wooffinden,36.68,6
+457,Pectis papposa Harv. & A. Gray var. papposa,Florella Oxenford,287.32,3
+458,Suaeda linifolia Pall.,Goldie Straffon,98.28,5
+459,Entosthodon planoconvexus (E.B. Bartram) Grout,Agace Cobain,350.53,3
+460,Cryptantha gracilis Osterh.,Xylia Gorbell,475.78,6
+461,Potentilla subviscosa Greene,Matthus Lorence,229.71,5
+462,Epidendrum boricuarum,Chancey Baldrey,457.26,3
+463,Cyperus retrofractus (L.) Torr.,Gonzalo Kneeshaw,458.32,5
+464,Gundelia tournefortii L.,Vikki Macrae,347.28,6
+465,Jacquemontia pringlei A. Gray,Scarlet Waplington,387.22,4
+466,Hypogynium virgatum (Desv. ex Ham.) Dandy,Catlee Colbeck,91.61,2
+467,Epilobium ciliatum Raf.,Adella Arents,169.38,6
+468,Plantago hawaiensis (A. Gray) Pilg.,Heida Kolyagin,313.15,5
+469,Acacia schaffneri (S. Watson),Ash Skpsey,344.85,1
+470,Centrosema virginianum (L.) Benth.,Lanie Bissett,158.06,3
+471,Panicum trichoides Sw.,Erin Ivatts,247.48,1
+472,Collema fragrans (Sm.) Ach.,Gerick La Torre,358.29,3
+473,Prosopis glandulosa Torr. var. prostrata Burkart,Jae Bonus,232.02,3
+474,Quercus ×macdonaldii Greene & Kellogg (pro sp.),Farly Mears,426.46,6
+475,Perityle rupestris (A. Gray),Denney Sargeant,236.22,1
+476,Chaptalia albicans (Sw.) Vent. ex Steud.,Cathi Croote,35.42,6
+477,Ampelopsis brevipedunculata (Maxim.) Trautv.,Kaela Newgrosh,189.06,4
+478,Carex ×mendica Lepage,Dieter Paskins,146.53,4
+479,Furcraea antillana A. Álvarez,Sheppard Blockley,284.40,4
+480,Dalea villosa (Nutt.) Spreng. var. villosa,Pammie Kender,369.01,5
+481,Juniperus pseudosabina Fisch. & C.A. Mey.,Gabriel Sharram,180.14,1
+482,Lecanora demissa (Flotow) Zahlbr.,Bordy Gayne,414.60,5
+483,Crataegus ×anomala Sarg. (pro sp.),Daniella Guidera,211.84,1
+484,Parkinsonia florida (Benth. ex A. Gray) S. Watson,Engracia McNuff,138.53,1
+485,Alnus viridis (Chaix) DC.,Felisha Lawden,274.07,4
+486,Clarkia imbricata F.H. Lewis & M.E. Lewis,Agathe Voak,135.65,5
+487,Ulmus davidiana Planch.,Allie Phair,390.92,1
+488,Calochortus westonii Eastw.,Yoshi Jonuzi,397.82,5
+489,Thamnobryum neckeroides (Hook.) E. Lawton,Violette Gummary,391.44,6
+490,Sagraea umbrosa (Sw.) DC.,Jeanine Cardus,487.57,5
+491,Lagunaria (DC.) Rchb.,Barny Asaaf,217.05,3
+492,Polyalthia Blume,Ianthe Briton,398.48,3
+493,Mitella stauropetala Piper,Fiorenze Durrand,475.65,6
+494,Cecropia Loefl.,Muire Danilyak,171.81,3
+495,Viola ×consobrina House,Kristin Kinnane,370.96,4
+496,Triteleia lugens Greene,Dexter Mulqueen,73.34,3
+497,Chromolaena oteroi (Monachino),Sharai Ickowicz,207.68,4
+498,Rhizophora mangle L.,Annamarie Bevington,153.56,4
+499,Pedicularis rainierensis Pennell & Warren,Hebert Cox,72.75,3
+500,Reynosia Griseb.,Aurel Gobeau,439.13,5

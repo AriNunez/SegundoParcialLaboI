@@ -272,3 +272,71 @@ int controller_saveListFilterMinotauroAsText(char* path , LinkedList* pArrayList
 
     return retorno;
 }
+
+LinkedList* controller_MapearLibros(LinkedList* pArrayListLibros)
+{
+	LinkedList* pListMap = NULL;
+
+	if(pArrayListLibros != NULL)
+	{
+		pListMap = ll_map(pArrayListLibros, libro_mapearLibros);
+	}
+
+	return pListMap;
+}
+
+
+int controller_saveListMapText(char* path , LinkedList* pArrayListMap)
+{
+	int retorno;
+	FILE* pArchivo;
+	eLibro* pLibro;
+	int len;
+	int i;
+	int id;
+	char titulo[LEN_CHAR];
+	char autor[LEN_CHAR];
+	float precio;
+	int idEditorial;
+
+	retorno = 0;
+
+	if(path != NULL && pArrayListMap != NULL && ll_isEmpty(pArrayListMap) == 0)
+	{
+		pArchivo = fopen(path,"w");
+
+		if(pArchivo != NULL)
+		{
+			len = ll_len(pArrayListMap);
+
+			fprintf(pArchivo,"id,titulo,autor,precio,idEditorial\n");
+
+			for(i=0;i<len;i++)
+			{
+				pLibro = (eLibro*) ll_get(pArrayListMap, i);
+				if(pLibro == NULL)
+				{
+					break;
+				}
+
+				libro_getId(pLibro, &id);
+				libro_getTitulo(pLibro, titulo);
+				libro_getAutor(pLibro, autor);
+				libro_getPrecio(pLibro, &precio);
+				libro_getIdEditorial(pLibro, &idEditorial);
+
+				fprintf(pArchivo,"%d,%s,%s,%.2f,%d\n",id,titulo,autor,precio,idEditorial);
+			}
+
+			fclose(pArchivo);
+
+			if(len==i)
+			{
+				retorno = 1;
+			}
+		}
+
+	}
+
+    return retorno;
+}

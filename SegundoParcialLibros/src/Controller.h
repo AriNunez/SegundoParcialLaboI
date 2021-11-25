@@ -14,4 +14,7 @@ int controller_sortLibros(LinkedList* pArrayListLibros);
 LinkedList* controller_FiltrarLibrosPorEditorial(LinkedList* pArrayListLibros);
 int controller_saveListFilterMinotauroAsText(char* path , LinkedList* pArrayListFilterMinotauro);
 
+LinkedList* controller_MapearLibros(LinkedList* pArrayListLibros);
+int controller_saveListMapText(char* path , LinkedList* pArrayListMap);
+
 #endif // controller_H_INCLUDED

@@ -634,3 +634,37 @@ LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void* element))
 
 	return pNewLinkedList;
 }
+
+/*
+ * Desarrollar la función ll_map en la biblioteca linkedList, la cual recibirá la lista y una función.
+La función ll_map ejecutará la función recibida como parámetro por cada ítem de la lista, de
+este modo se realizarán descuentos a los precios según se detalla:
+* PLANETA: 20% (si el monto es mayor o igual a $300)
+* SIGLO XXI EDITORES: 10% (si el monto es menor o igual a $200)
+ */
+LinkedList* ll_map(LinkedList* this, void* (*pFunc)(void* element))
+{
+	LinkedList* pNewLinkedList = NULL;
+	void* pElement;
+	void* pNewElement;
+	int i;
+
+	if(this != NULL && pFunc != NULL)
+	{
+		pNewLinkedList = ll_newLinkedList();
+
+		if(pNewLinkedList != NULL)
+		{
+			for(i=0;i<ll_len(this);i++)
+			{
+				pElement = ll_get(this, i);
+
+				pNewElement = pFunc(pElement);
+
+				ll_add(pNewLinkedList, pNewElement);
+			}
+		}
+	}
+
+	return pNewLinkedList;
+}

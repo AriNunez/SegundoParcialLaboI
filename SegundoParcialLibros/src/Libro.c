@@ -611,3 +611,63 @@ int libro_FiltrarEditPenguinBooks(void* pElement)
 
 	return retorno;
 }
+
+void* libro_mapearLibros(void* element)
+{
+	eLibro* pLibro;
+	eLibro* pCloneLibro;
+	int idEditorial;
+	float precio;
+	float descuento;
+	float precioConDescuento;
+
+	if(element != NULL)
+	{
+		pLibro = (eLibro*) element;
+		pCloneLibro = libro_clonarLibro(pLibro);
+		libro_getIdEditorial(pLibro, &idEditorial);
+		libro_getPrecio(pLibro, &precio);
+
+		if(idEditorial == 1 && precio >= 300)
+		{
+			descuento = (precio * 20) / 100;
+			precioConDescuento = precio - descuento;
+			libro_setPrecio(pCloneLibro, precioConDescuento);
+
+		}
+		else
+		{
+			if(idEditorial == 2 && precio <= 200)
+			{
+				descuento = (precio * 10) / 100;
+				precioConDescuento = precio - descuento;
+				libro_setPrecio(pCloneLibro, precioConDescuento);
+			}
+		}
+	}
+
+	return pCloneLibro;
+}
+
+eLibro* libro_clonarLibro(eLibro* this)
+{
+	eLibro* pCloneLibro = NULL;
+	int id;
+	char titulo[LEN_CHAR];
+	char autor[LEN_CHAR];
+	float precio;
+	int idEditorial;
+
+	if(this != NULL)
+	{
+		libro_getId(this, &id);
+		libro_getTitulo(this, titulo);
+		libro_getAutor(this, autor);
+		libro_getPrecio(this, &precio);
+		libro_getIdEditorial(this, &idEditorial);
+
+		pCloneLibro = libro_newParametros(id, titulo, autor, precio, idEditorial);
+	}
+
+	return pCloneLibro;
+}

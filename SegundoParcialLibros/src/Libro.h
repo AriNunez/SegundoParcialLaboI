@@ -50,5 +50,8 @@ int libro_FiltrarEditMinotauro(void* pElement);
 int libro_FiltrarEditSalamandra(void* pElement);
 int libro_FiltrarEditPenguinBooks(void* pElement);
 
+void* libro_mapearLibros(void* element);
+eLibro* libro_clonarLibro(eLibro* this);
+
 
 #endif /* LIBRO_H_ */

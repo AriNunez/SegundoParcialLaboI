@@ -23,6 +23,7 @@ int main(void)
 	LinkedList* pListaLibros;
 	LinkedList* pListaEditoriales;
 	LinkedList* pListFilterMinotauro;
+	LinkedList* pListMap;
 
 	pListaLibros = ll_newLinkedList();
 	pListaEditoriales = ll_newLinkedList();
@@ -38,8 +39,9 @@ int main(void)
 				"\n3. Ordenar la lista generada en el ítem anterior, con la función ll_sort, según el criterio de ordenamiento “Autor” de manera ascendente."
 				"\n4. Imprimir por pantalla todos los datos de los libros. "
 				"\n5. Realizar un listado de los libros de la editorial MINOTAURO. Para ello deberá utilizar la función ll_filter* del LinkedList. Guardar el listado en un archivo csv."
-				"\n6. Salir.\n");
-    	if(utn_getInt(&opciones, "\nIngrese una opcion: \n", "\n¡ERROR!\n", 1, 6, 3)==0)
+				"\n6. Generar el archivo de salida “mapeado.csv” luego de aplicar la función map.\n"
+				"\n7. Salir.\n");
+    	if(utn_getInt(&opciones, "\nIngrese una opcion: \n", "\n¡ERROR!\n", 1, 7, 3)==0)
 		{
 			switch(opciones)
 			{
@@ -135,13 +137,18 @@ int main(void)
 					break;
 
 				case 6:
+					pListMap = controller_MapearLibros(pListaLibros);
+					controller_ListLibrosConRelacion(pListMap, pListaEditoriales);
+					controller_saveListMapText("mapeado.csv", pListMap);
+					break;
+				case 7:
 					puts("\n¡GRACIAS POR UTILIZAR NUESTROS SERVICIOS!\n");
 					break;
 
 			}
 
 		}
-    }while(opciones != 6);
+    }while(opciones != 7);
 
 	return EXIT_SUCCESS;
 }
