@@ -1,4 +1,6 @@
 id,titulo,autor,precio,idEditorial
+0,""Lipocarpha rehmanii (Ridley) Goetghebeur, nom. inq."",0.00,353
+0,""Festuca auriculata Drobow, nom. inq."",0.00,30
 1,Gamochaeta americana (Mill.) Weddell,Tom Fassbindler,247.32,1
 2,Hyparrhenia Andersson ex Fourn.,Clem Danko,313.05,1
 3,Lepidium flavum Torr. var. flavum,Nananne Vain,229.81,6
@@ -44,7 +46,6 @@ id,titulo,autor,precio,idEditorial
 43,Pilea inaequalis (Juss. ex Poir.) Weddell,Lin Atherton,291.70,1
 44,Abrus precatorius L.,Diann Butland,468.66,6
 45,Acacia sophorae (Labill.) R. Br.,Lita Scamel,317.12,1
-0,""Lipocarpha rehmanii (Ridley) Goetghebeur, nom. inq."",0.00,353
 47,Salvia micrantha Vahl var. micrantha,Marielle Wiersma,37.51,4
 48,Loeselia glandulosa (Cav.) G. Don,Randie Nares,453.58,6
 49,Polygonum hirsutum Walter,Elayne McGillreich,108.58,2
@@ -352,7 +353,6 @@ id,titulo,autor,precio,idEditorial
 351,Sapindus saponaria L. var. saponaria,Garvy Wimsett,29.75,6
 352,Arthonia epipastoides Nyl.,Charmain Lemar,260.13,1
 353,Geum canadense Jacq. var.,Rudolf Fuzzey,297.28,5
-0,""Festuca auriculata Drobow, nom. inq."",0.00,30
 355,Diellia ×lauii W.H. Wagner,Melita Besnardeau,253.80,4
 356,Mimosa turneri Barneby,Latashia McLurg,68.10,3
 357,Buellia mamillana (Tuck.) W.A. Weber,Ev Baseley,342.24,5
